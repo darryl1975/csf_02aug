@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { PostService } from '../post.service';
 import { Router } from '@angular/router';
 
@@ -21,8 +21,8 @@ export class PostCreateComponent {
   // *** step 3: intialize the FormGroup object using the Form Builder
   initializeForm() {
     this.postForm = this.fb.group({
-      title: new FormControl(''),
-      body: new FormControl('')
+      title: new FormControl('', [ Validators.required]),
+      body: new FormControl('', [ Validators.required])
     });
   }
 

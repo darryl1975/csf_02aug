@@ -17,4 +17,11 @@ export class PostListComponent {
       this.posts = data;
     })
   }
+
+  deletePost(id: number) {
+    this.postService.delete(id).subscribe((response: any) => {
+      this.posts = this.posts.filter(p => p.id != id);
+    })
+
+  }
 }
