@@ -12,6 +12,11 @@
       "id": 1,
       "title": "Test Post 01",
       "body": "Sample Test Post 01"
+    },
+    {
+      "title": "Test Post before break",
+      "body": "Break time for tea",
+      "id": 2
     }
   ]
 }
