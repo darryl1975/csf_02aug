@@ -17,4 +17,11 @@ export class HomeComponent {
       this.allFruits = data;
     })
   }
+  delete(id: number) {
+    this.fruitService.delete('fruits', id).subscribe(
+      (data) => {
+        this.allFruits = this.allFruits.filter(o => o.id != id);
+      }
+    )
+  }
 }

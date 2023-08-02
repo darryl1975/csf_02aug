@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './fruits/home/home.component';
 import { CreateComponent } from './fruits/create/create.component';
 import { EditComponent } from './fruits/edit/edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EditComponent } from './fruits/edit/edit.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

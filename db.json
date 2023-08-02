@@ -1,10 +1,10 @@
 {
-    "fruits": [
-        {
-            "id": 1,
-            "name": "cherry",
-            "quantity": 100,
-            "price": 25
-        }
-    ]
+  "fruits": [
+    {
+      "id": 1,
+      "name": "cherry",
+      "quantity": 100,
+      "price": 20
+    }
+  ]
 }
