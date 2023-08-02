@@ -6,5 +6,12 @@
       "quantity": 100,
       "price": 20
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Test Post 01",
+      "body": "Sample Test Post 01"
+    }
   ]
 }
