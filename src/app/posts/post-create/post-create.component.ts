@@ -21,13 +21,13 @@ export class PostCreateComponent {
   // *** step 3: intialize the FormGroup object using the Form Builder
   initializeForm() {
     this.postForm = this.fb.group({
-      title: new FormControl('', [ Validators.required]),
-      body: new FormControl('', [ Validators.required])
+      title: new FormControl('', [Validators.required]),
+      body: new FormControl('', [Validators.required])
     });
   }
 
   createPost() {
-    // console.log('createPost: ' + this.postForm.get('title'));
+    console.log('createPost: ' + JSON.stringify(this.postForm.value));
     this.postService.create(this.postForm.value).subscribe((response: any) => {
       this.router.navigateByUrl('/posts/home');
     })
